@@ -33,4 +33,4 @@ The GEE code outputs everything in a raster format. The final EVI values are pre
 
 ## Reference:
 
-Miller G.J. , Dronova I., Oikawa P.Y., Knox S.H., Windham-Myers L., Shahan J., Stuart-Haëntjens P.. 2021 The potential of satellite remote sensing time series to uncover wetland phenology under unique challenges of tidal setting. under review
+Miller G.J. , Dronova I., Oikawa P.Y., Knox S.H., Windham-Myers L., Shahan J., Stuart-Haëntjens P., 2021 The potential of satellite remote sensing time series to uncover wetland phenology under unique challenges of tidal setting. under review
