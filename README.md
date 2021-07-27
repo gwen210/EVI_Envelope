@@ -20,7 +20,7 @@ This is set to run for the bay area tidal wetlands. To change the study area, up
 
 4) “mod.pres24_Biweek_ls.rds” fitted model coefficient values. Needed for R code
 
-5) “elevmhhw_30m_pj.tif” elevation above mean higher high water in meters for the San Francisco Bay Area. Data from Point Blue
+5) “elevmhhw_30m_pj.tif” elevation above mean higher high water in meters for the San Francisco Bay Area. Data from Point Blue doi:10.1371/journal.pone.0027388
 
 
 Other notes
