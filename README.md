@@ -12,7 +12,7 @@ The year is automatically appended depending on the year specified
 2) GEE code to generate EVI history 2013-2018 – this is the date range used to build the model. EVI history is based on Landsat 8 data 
 This is set to run for the bay area tidal wetlands. To change the study area, update the “flux” variable to the desired study area. 
 
-    Click [here](https://code.earthengine.google.com/571beaa40f5611b0680af94c8139d511) to open the GEE code;
+    Click [here](https://code.earthengine.google.com/571beaa40f5611b0680af94c8139d511) to open the GEE code in Earth Engine or refer to the EVI_History_L8.js file;
     
     Needed GEE output for modeling EVI within R: multiband_evi_biweekly_history
 
