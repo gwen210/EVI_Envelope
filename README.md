@@ -5,7 +5,7 @@ This is set to run for the San Francisco Bay Area tidal wetlands. To change the 
 The output files are saved as multiband_weather_Biweek_all_2019.tif and Multiband_PDSI_Biweek_2019.tif
 The year is automatically appended depending on the year specified  
 
-    Click [here](https://code.earthengine.google.com/dd287aa68b15dbfd7e9d8eab231d90de) to open the GEE code;
+    Click [here](https://code.earthengine.google.com/dd287aa68b15dbfd7e9d8eab231d90de) to open the GEE code in Earth Engine, or refer to the GEE_weather.js file;
     
     Needed GEE output for modeling EVI within R: Multiband_weather_biweek_2019 and Multiband_PDSI_Biweek_2019
 
