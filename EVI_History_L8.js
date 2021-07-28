@@ -1,7 +1,8 @@
 var imageVisParam = {"opacity":1,"bands":["evi"],"palette":["ffffff","ce7e45","df923d","f1b555","fcd163","99b718","74a901","66a000","529400","3e8601","207401","056201","004c00","023b01","012e01","011d01","011301"]};
 
 
-//GEE code to summarize historical EVI data biweekly
+
+//GEE code to summarize historical EVI data biweekly (14 days) using Landsat 8 only
 
 
 // set start and end year
@@ -12,8 +13,11 @@ var endyear = 2018;
 var Dstart_hist = '2013-01-01';
 var Dend_hist   = '2018-12-31';
 
-var Dstart = '2013-01-01';
-var Dend   = '2018-12-31';
+var Dstart = Dstart_hist;
+var Dend   = Dend_hist;
+
+//Set study area (flux) this can be changed based on the region a user wants to create EVI preditions for
+var flux =  ee.FeatureCollection('users/GMiller/SFEI_dissolved3');
 
 
 // make a date object
@@ -21,8 +25,6 @@ var startdate = ee.Date.fromYMD(startyear, 1, 1);
 var enddate = ee.Date.fromYMD(endyear + 1, 1, 1);
 print(startdate,"start");
 
-//Set study area (flux)
-var flux =  ee.FeatureCollection('users/GMiller/SFEI_dissolved3');
 
 //center map on bay area
 Map.setCenter(-122.3242, 37.7878, 9);
@@ -170,6 +172,5 @@ Export.image.toDrive({
   image: multiband_ls_hist,
   description: 'multiband_evi_biweekly_history',
   scale: 30,
-  folder:"UCB_tiff",
   region: flux
 });
