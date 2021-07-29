@@ -12,7 +12,7 @@ The year is automatically appended depending on the year specified
 2) GEE code to generate Enhanced Vegetation Index (EVI) history 2013-2018 – this is the date range used to build the model. EVI history is based on Landsat 8 data 
 This is set to run for the bay area tidal wetlands. To change the study area, update the “flux” variable to the desired study area. 
 
-    Click [here](https://code.earthengine.google.com/571beaa40f5611b0680af94c8139d511) to open the GEE code in Earth Engine or refer to the EVI_History_L8.js file;
+    Click [here](https://code.earthengine.google.com/93c9b20e8e405572001e9855f3f1cbf0) to open the GEE code in Earth Engine or refer to the EVI_History_L8.js file;
     
     Needed GEE output for modeling EVI within R: multiband_evi_biweekly_history
 
@@ -24,7 +24,7 @@ This is set to run for the bay area tidal wetlands. To change the study area, up
 
 # Modeled EVI for the San Francisco Bay Area tidal wetlands for a given year
 
-Google earth engine code that allows user to select a region of interest and download the predicted EVI for a given year. Years 2016 - part of 2021 are currently on GEE. Within the paper we only model 2019 EVI for the study area, however we also generated predictions for 2016 - half of 2021. The EVI histories changed for the 2016 - 2018 dates as described within the GEE code.
+Google earth engine code that allows user to select a region of interest and download the predicted EVI for a given year. Years 2016 - part of 2021 are currently on GEE. Within the paper we only model 2019 EVI for the study area, however we also generated predictions for 2016 - half of 2021. The EVI histories changed for the modeled 2016 - 2018 dates as described within the GEE code.
 
 Within the GEE code the user can select a region of interest within the SF Bay area and download a csv file containing the predictions. 
 
