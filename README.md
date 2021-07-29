@@ -28,7 +28,7 @@ Google earth engine code that allows user to select a region of interest and dow
 
 Within the GEE code the user can select a region of interest within the SF Bay area and download a csv file containing the predictions. 
 
-   Click [here](https://code.earthengine.google.com/781cdffaa878331de9b176dad94335e3) to open the GEE code in Earth Engine or refer to the EVI_Predicted.js file
+   Click [here](https://code.earthengine.google.com/96e943abf6f2dbc48fd0a53f3818ae17) to open the GEE code in Earth Engine or refer to the EVI_Predicted.js file
 
 Other notes
 * The study area is set in GEE as the “flux” variable and can be changed by uploading/drawing a different polygon. 
