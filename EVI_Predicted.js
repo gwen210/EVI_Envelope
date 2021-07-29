@@ -18,29 +18,36 @@ var geometry = /* color: #d63000 */ee.Geometry.Polygon(
 /// choose what EVI prediction year to pull data from. 
 // To do this remove the // from the beginning of the script
 // and add // to all the other lines that start with var Timage
-// for example EVI_mean_2016 contains biweekly EVI predictions for all the Bay Area Tidal Wetlands
+// for example EVI_mean_2019 contains biweekly EVI predictions for all the Bay Area Tidal Wetlands
 
 //var Timage = ee.Image("users/GMiller/EVI_mean_2021");
 //var Timage = ee.Image("users/GMiller/EVI_mean_2020");
-//var Timage = ee.Image("users/GMiller/EVI_mean_2019");
+var Timage = ee.Image("users/GMiller/EVI_mean_2019");
 //var Timage = ee.Image("users/GMiller/EVI_mean_2018");
 //var Timage = ee.Image("users/GMiller/EVI_mean_2017");
-var Timage = ee.Image("users/GMiller/EVI_mean_2016");
+//var Timage = ee.Image("users/GMiller/EVI_mean_2016");
 
 //Prediction Year
 //Update the prediction year to match the data selected above
-var year = 2016 ;
+var year = 2019 ;
 
 
 //Set the first day of the year for EVI prediction (first day of the year)
 //Make sure the data is january 1st of the prediction year
 // Timage, year, and Dstart_hist all need to be the same year
-var Dstart_hist = '2016-01-01';
+var Dstart_hist = '2019-01-01';
 
 //set center of region of interest (geometry) and zoom level
 //geometry is a polygon that can be changed to the desired area
 //the polygon can be deleted and created somewhere else or the vertices can be adjusted
 Map.centerObject(geometry, 11);
+
+
+////////////note
+// For predicted EVI year 2016,  EVI history includes landsat 7 & 8 for years 2010-2015 
+// For predicted EVI year 2017,  EVI history includes landsat 7 & 8 for years 2011-2016 
+// For predicted EVI year 2018,  EVI history includes landsat 7 & 8 for years 2012-2017 
+// For predicted EVI year 2019, 2020 and 2021 EVI history includes landsat 8 only for years 2013-2018
 
 
 //////////////////////////////////////////////////////////////////////
